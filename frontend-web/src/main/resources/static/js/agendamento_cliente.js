@@ -17,9 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Variáveis para dados reais ---
     let servicosData = [];
     let profissionaisData = [
-        { id: 1, nome: 'Ana Paula (Designer A)' },
-        { id: 2, nome: 'Bruna Silva (Designer B)' },
-        { id: 3, nome: 'Carla Dias (Designer C)' }
+        { id: 1, nome: 'Jessika Xavier' }
     ];
 
     // --- Funções para Popular Selects ---

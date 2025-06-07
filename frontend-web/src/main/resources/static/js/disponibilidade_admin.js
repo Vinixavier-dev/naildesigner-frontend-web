@@ -18,9 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Variáveis para dados reais (ou simulação inicial de profissionais) ---
     // Idealmente, profissionaisData viria de um 'profissional-service' ou 'usuario-service'
     let profissionaisData = [
-        { id: 1, nome: 'Ana Paula (Designer A)' },
-        { id: 2, nome: 'Bruna Silva (Designer B)' },
-        { id: 3, nome: 'Carla Dias (Designer C)' }
+       { id: 1, nome: 'Jessika Xavier' }
     ];
 
     // --- Funções Auxiliares ---

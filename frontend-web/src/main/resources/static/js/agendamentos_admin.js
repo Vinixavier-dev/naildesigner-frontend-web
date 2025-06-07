@@ -24,9 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let clientesData = []; // Aqui serão armazenados os clientes do backend
     let servicosData = []; // Aqui serão armazenados os serviços do backend
     let profissionaisData = [ // Simulação de profissionais por enquanto, idealmente viriam de um 'profissional-service'
-        { id: 1, nome: 'Ana Paula (Designer A)' },
-        { id: 2, nome: 'Bruna Silva (Designer B)' },
-        { id: 3, nome: 'Carla Dias (Designer C)' }
+        { id: 1, nome: 'Jessika Xavier' }
     ];
 
     // --- Funções Auxiliares para Manipulação da UI ---
