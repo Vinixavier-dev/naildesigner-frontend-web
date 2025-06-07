@@ -23,13 +23,13 @@
         <div class="container header-desktop">
             <img th:src="@{/img/logo-preto-agende-nail.png}" class="logo" alt="Logo Agende Nail">
             <nav class="menu" role="navigation">
-                <div class="menu-page active"><a th:href="@{/admin/dashboard}">Dashboard</a></div>
+                <div class="menu-page active"><a th:href="@{/admin/admin_dashboard}">Dashboard</a></div>
                 <div class="menu-page"><a th:href="@{/admin/agendamentos_admin}">Agendamentos</a></div>
                 <div class="menu-page"><a th:href="@{/admin/usuarios_admin}">Usuários</a></div>
                 <div class="menu-page"><a th:href="@{/admin/servicos_admin}">Serviços</a></div>
                 <div class="menu-page"><a th:href="@{/admin/disponibilidade_admin}">Disponibilidade</a></div>
             </nav>
-            <a th:href="@{/admin/perfil}" class="profile-icon-desktop">
+            <a th:href="@{/admin/perfil_admin}" class="profile-icon-desktop">
                 <img th:src="@{/img/foto-perfil.png}" class="foto-perfil" alt="Foto de perfil do administrador">
             </a>
         </div>
@@ -38,7 +38,7 @@
             <i class="fas fa-bars hamburger-icon" id="hamburger-toggle"></i>
             <img th:src="@{/img/logo-preto-agende-nail.png}" class="logo-mobile" alt="Logo Agende Nail Mobile">
             <div class="profile-icon-mobile">
-                <a th:href="@{/admin/perfil}">
+                <a th:href="@{/admin/perfil_admin}">
                     <img th:src="@{/img/foto-perfil.png}" class="foto-perfil-mobile"
                         alt="Foto de perfil do administrador (Mobile)">
                 </a>
@@ -56,12 +56,12 @@
             <span>Olá, Admin!</span>
         </div>
         <ul>
-            <li><a th:href="@{/admin/dashboard_admin}"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a th:href="@{/admin/admin_dashboard}"><i class="fas fa-th-large"></i> Dashboard</a></li>
             <li><a th:href="@{/admin/agendamentos_admin}"><i class="fas fa-calendar-alt"></i> Agendamentos</a></li>
             <li><a th:href="@{/admin/usuarios_admin}"><i class="fas fa-users"></i> Usuários</a></li>
             <li><a th:href="@{/admin/servicos_admin}"><i class="fas fa-cut"></i> Serviços</a></li>
             <li><a th:href="@{/admin/disponibilidade_admin}"><i class="fas fa-clock"></i> Disponibilidade</a></li>
-            <li><a th:href="@{/admin/perfil}"><i class="fas fa-user-circle"></i> Meu Perfil</a></li>
+            <li><a th:href="@{/admin/perfil_admin}"><i class="fas fa-user-circle"></i> Meu Perfil</a></li>
         </ul>
     </div>
 
@@ -115,10 +115,10 @@
                 <h3>Links Rápidos</h3>
                 <ul>
                     <li><a th:href="@{/}">Painel de clientes</a></li>
-                    <li><a th:href="@{/agendamentos_admin}">Gerenciar Agendamentos</a></li>
-                    <li><a th:href="@{/usuarios_admin}">Gerenciar Usuários</a></li>
-                    <li><a th:href="@{/servicos_admin}">Gerenciar Serviços</a></li>
-                    <li><a th:href="@{/disponibilidade_admin}">Gerenciar Disponibilidade</a></li>
+                    <li><a th:href="@{admin/agendamentos_admin}">Gerenciar Agendamentos</a></li>
+                    <li><a th:href="@{admin/usuarios_admin}">Gerenciar Usuários</a></li>
+                    <li><a th:href="@{admin/servicos_admin}">Gerenciar Serviços</a></li>
+                    <li><a th:href="@{admin/disponibilidade_admin}">Gerenciar Disponibilidade</a></li>
 
                 </ul>
             </div>

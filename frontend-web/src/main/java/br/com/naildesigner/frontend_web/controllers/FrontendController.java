@@ -33,6 +33,11 @@ public class FrontendController {
         return "admin/usuarios_admin"; // Mapeia para src/main/resources/templates/admin/usuarios_admin.html
     }
 
+     @GetMapping("/admin/perfil_admin") // Página de perfil do admin
+    public String perfilAdminPage() {
+        return "admin/perfil_admin"; // Mapeia para src/main/resources/templates/admin/perfil_admin.html
+    }
+
     // --- Rotas para as páginas de AUTH (Autenticação) ---
     // (Presumindo nomes comuns para páginas de autenticação)
     @GetMapping("/auth/login")

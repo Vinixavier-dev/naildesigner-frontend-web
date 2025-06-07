@@ -278,7 +278,7 @@ header {
 .intro-artistic-section {
     /* Gradiente com opacidade ajustada para a imagem ser mais visível */
     background: linear-gradient(rgba(224, 204, 255, 0.5), rgba(187, 156, 233, 0.5)),
-                url('/nailDesigner/src/main/resources/static/img/unha-11.jpg') no-repeat center center/cover;
+                url('https://www.lojaodocabeleireiro.com/wp-content/uploads/2022/02/shutterstock-1699588681-scaled.jpg') no-repeat center center/cover;
     color: #3c2c54;
     padding: 120px 20px 80px;
     text-align: center;

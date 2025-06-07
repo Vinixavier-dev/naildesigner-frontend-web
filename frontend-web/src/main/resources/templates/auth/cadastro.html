@@ -67,8 +67,8 @@
                 <li><a th:href="@{/agendamento}"><i class="fas fa-calendar"></i> Agendar</a></li>
                 <li><a th:href="@{meus-agendamentos}"><i class="fas fa-calendar-alt"></i> Meus Agendamentos</a></li>
                 <li><a th:href="@{/sobre}"><i class="fas fa-info-circle"></i> Sobre mim</a></li>
-                <li><a th:href="@{/login}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                <li><a th:href="@{/cadastro}"><i class="fas fa-user-plus"></i>Cadastre-se</a></li>
+                <li><a th:href="@{/auth/login}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a th:href="@{/auth/cadastro}"><i class="fas fa-user-plus"></i>Cadastre-se</a></li>
             </ul>
         </nav>
         <div class="overlay" id="menu-overlay"></div>
@@ -106,7 +106,7 @@
 
                 <div class="btn-container"> <button type="submit">Cadastrar</button>
                 </div>
-                <div class="link-container"> <span>Já tem uma conta? <a th:href="@{/login}">Login</a></span>
+                <div class="link-container"> <span>Já tem uma conta? <a th:href="@{/auth/login}">Login</a></span>
                 </div>
             </form>
         </div>

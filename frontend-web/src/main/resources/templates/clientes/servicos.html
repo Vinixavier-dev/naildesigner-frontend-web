@@ -25,7 +25,7 @@
                 <div class="menu-page"><a th:href="@{/meus-agendamentos}">Agenda</a></div>
                 <div class="menu-page"><a th:href="@{/sobre}">Sobre mim</a></div>
             </nav>
-            <a href="perfil.html" class="profile-icon-desktop">
+            <a th:href="@{/perfil}" class="profile-icon-desktop">
                 <img th:src="@{/img/foto-perfil.png}" class="foto-perfil" alt="Foto de perfil do usuário">
             </a>
         </div>
@@ -34,7 +34,7 @@
             <i class="fas fa-bars hamburger-icon" id="hamburger-toggle"></i>
             <img th:src="@{/img/logo-preto-agende-nail.png}" class="logo-mobile" alt="Logo Agende Nail Mobile">
             <div class="profile-icon-mobile">
-                <a href="perfil.html">
+                <a th:href="@{/perfil}">
                     <img th:src="@{/img/foto-perfil.png}" class="foto-perfil-mobile" alt="Foto de perfil do usuário (Mobile)">
                 </a>
             </div>
@@ -55,10 +55,10 @@
                 <li><a th:href="@{/servicos}"><i class="fas fa-hand-sparkles"></i> Serviços</a></li>
                 <li><a href="#contact-footer"><i class="fas fa-phone-alt"></i> Contato</a></li>
                 <li><a th:href="@{/agendamento}"><i class="fas fa-calendar"></i> Agendar</a></li>
-                <li><a th:href="@{meus-agendamentos}"><i class="fas fa-calendar-alt"></i> Meus Agendamentos</a></li>
+                <li><a th:href="@{/meus-agendamentos}"><i class="fas fa-calendar-alt"></i> Meus Agendamentos</a></li>
                 <li><a th:href="@{/sobre}"><i class="fas fa-info-circle"></i> Sobre mim</a></li>
-                <li><a th:href="@{/login}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                <li><a th:href="@{/cadastro}"><i class="fas fa-user-plus"></i>Cadastre-se</a></li>
+                <li><a th:href="@{/auth/login}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a th:href="@{/auth/cadastro}"><i class="fas fa-user-plus"></i>Cadastre-se</a></li>
             </ul>
     </div>
 
@@ -87,7 +87,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img th:src="@{/img/servico-hero.jpg}" alt="Unhas em Gel">
+                            <img th:src="@{/img/unha-2.jpg}" alt="Unhas em Gel">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -101,7 +101,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-2.jpg" alt="Spa das Mãos">
+                            <img th:src="@{/img/unha-3.jpg}" alt="Spa das Mãos">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -115,7 +115,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-3.jpg" alt="Unhas Decoradas">
+                            <img th:src="@{/img/unha-5.jpg}" alt="Unhas Decoradas">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -129,7 +129,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-4.jpg" alt="Remoção de Gel">
+                            <img th:src="@{/img/unha-6.jpg}" alt="Remoção de Gel">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -143,7 +143,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-5.jpg" alt="Manutenção de Gel">
+                            <img th:src="@{/img/unha-7.jpg}" alt="Manutenção de Gel">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -157,7 +157,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-5.jpg" alt="Manutenção de Gel">
+                            <img th:src="@{/img/unha-8.jpg}" alt="Manutenção de Gel">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -171,7 +171,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-6.jpg" alt="Alongamento Fibra de Vidro">
+                            <img th:src="@{/img/unha-10.jpg}" alt="Alongamento Fibra de Vidro">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -185,7 +185,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-6.jpg" alt="Alongamento Fibra de Vidro">
+                            <img th:src="@{/img/unha-9.jpg}" alt="Alongamento Fibra de Vidro">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -199,7 +199,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-6.jpg" alt="Alongamento Fibra de Vidro">
+                            <img th:src="@{/img/unha-11.jpg}" alt="Alongamento Fibra de Vidro">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -213,7 +213,7 @@
                     
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-6.jpg" alt="Alongamento Fibra de Vidro">
+                            <img th:src="@{/img/unha-12.jpg}" alt="Alongamento Fibra de Vidro">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -227,7 +227,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-6.jpg" alt="Alongamento Fibra de Vidro">
+                            <img src="https://unhadecoradasimples.com.br/wp-content/uploads/2024/04/unhas-dos-pes-decoradas-4.jpg" alt="Alongamento Fibra de Vidro">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -241,7 +241,7 @@
 
                     <div class="card-servico artistic-card">
                         <div class="card-image-wrapper">
-                            <img src="/nailDesigner/src/main/resources/static/img/unha-6.jpg" alt="Alongamento Fibra de Vidro">
+                            <img src="https://images.carreirabeauty.com/uploads/photo/s3_file/5d904430f11e650001e147b2/s3_file.jpeg" alt="Alongamento Fibra de Vidro">
                             <div class="card-overlay"></div>
                         </div>
                         <div class="card-content">
